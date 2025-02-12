@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-5">Result</h1>
+    <div class="alert alert-info mt-4">
+        <strong>Message:</strong> {{ message }}<br>
+        <strong>Prediction:</strong> {{ label }}
+    </div>
+    <a href="/" class="btn btn-primary">Back</a>
+</div>
+</body>
+</html>
+
